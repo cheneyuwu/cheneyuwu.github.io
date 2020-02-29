@@ -31,9 +31,10 @@
               <p style="text-align:center">
                 cheney[dot]wu[at]mail[dot]utoronto[dot]ca
               </p>
-              <p>I am a Undergrad student at the <a href="https://www.utoronto.ca/">University of Toronto</a>.
+              <p>Hello! I am an undergraduate student at the <a href="https://www.utoronto.ca/">University of Toronto</a> majoring in <a href="https://engsci.utoronto.ca/">Engineering Science</a> (Robotics) where I am fortunate to be supervised by <a href="http://www.cs.toronto.edu/~florian/">Prof. Florian Shkurti</a> and <a href="http://stars.utias.utoronto.ca/~jkelly/">Prof. Jonathan Kelly</a>. I am deeply interested in machine learning and robotics, and my research focuses on developing learning algorithms for robot vision, planning, and control. More specifically, I am willing to develop methods that enable robots to learn a set of composable and generalizable skills, which can be used to carrying out complicated and possibly unseen tasks. I also want to find ways that allow robots to coordinate with each other easily and efficiently and interact with humans in a shared workspace safely and reliably.
               </p>
-              <p>TODO
+              <p>Last summer, I worked with Prof. Florian Shkurti on combining imitation learning and reinforcement learning for robotic control. Before that, I was an software engineer intern at Intel PSG where I participated in the development of the <a href="https://www.intel.ca/content/www/ca/en/software/programmable/quartus-prime/hls-compiler.html">Intel HLS Compiler for FPGA</a> and <a href="https://software.intel.com/en-us/opencl-sdk">Intel SDK for OpenCL Applications</a>.</p>
+              <p>If you have any questions/want to talk/want to collaborate, feel free to send me an email!
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/e/3OgUy"> Email</a> &nbsp;/&nbsp;
@@ -54,7 +55,6 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
               <p>
-                TODO
               </p>
             </td>
           </tr>
@@ -63,13 +63,13 @@
         <br>
         <br>
         <br>
-<!--
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                TODO
+                Below is a list of my past research projects.
               </p>
             </td>
           </tr>
@@ -85,30 +85,7 @@
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
+              {{ post.content }}
             </td>
           </tr>
           {% endif %}
@@ -123,8 +100,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Small Projects</h2>
-              <p>TODO
+              <h2>Course Projects</h2>
+              <p>Below is a list of my course projects during my undergraduate study at UofT Engineering Science.
               </p>
             </td>
           </tr>
@@ -140,45 +117,7 @@
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
+              {{ post.content }}
             </td>
           </tr>
           {% endif %}
@@ -189,83 +128,17 @@
         <br>
         <br>
         <br>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include side projects and unpublished research work.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'Research' and cat != 'Course' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">this</a> website
+                Website design based on <a style="font-size:small;" href="https://jonbarron.info">this</a>. Love his design!
               </p>
             </td>
           </tr>
-        </table> -->
+        </table>
 
       </td>
     </tr>
