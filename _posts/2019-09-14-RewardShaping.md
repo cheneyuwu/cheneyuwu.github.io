@@ -4,11 +4,11 @@ image: /images/rl_shaping.png
 categories: Research
 ---
 <!-- title -->
-**Shaping Rewards for Combined Reinforcement and Imitation Learning using Generative Models**\
+**Shaping Rewards for Combined Reinforcement and Imitation Learning using Generative Models**
 <!-- authors -->
-**Yuchen Wu**, [Melissa Mozifian](https://mila.quebec/en/person/melissa-mozifian/), [Florian Shkurti](http://www.cs.toronto.edu/~florian/)\
+**Yuchen Wu**, [Melissa Mozifian](https://mila.quebec/en/person/melissa-mozifian/), [Florian Shkurti](http://www.cs.toronto.edu/~florian/)
 <!-- venu, date -->
-2019\
+2019
 <!-- archive, code, slides -->
 [pdf](http://www.cs.toronto.edu/~florian/rl_with_shaping/RLfD_via_Shaping.pdf) / [code](https://github.com/cheneyuwu/TD3fD-through-Shaping-using-Generative-Models)
 
