@@ -1,0 +1,44 @@
+{
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "quick",
+      "tools": ["pdflatex"]
+    },
+    {
+      "name": "full (biber)",
+      "tools": ["pdflatex", "biber", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "full (gls+biber)",
+      "tools": ["pdflatex", "makeglossaries", "biber", "pdflatex", "pdflatex", "pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-recorder",
+        "-output-directory=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": ["%OUTDIR%/%DOCFILE%"],
+      "env": {}
+    },
+    {
+      "name": "makeglossaries",
+      "command": "makeglossaries",
+      "args": ["-d%OUTDIR%", "%DOCFILE%"],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.outDir": "%DIR%"
+}
