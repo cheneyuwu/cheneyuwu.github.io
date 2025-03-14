@@ -10,27 +10,44 @@
 \printaddress{+1-519-694-7627 \\ \href{mailto:cheneyuwu@gmail.com}{cheneyuwu@gmail.com}}
 \printaddress{\href{https://cheneyuwu.github.io/}{https://cheneyuwu.github.io/}}
 
-\begin{rSection}{ACADEMIC HISTORY}
+\begin{rSection}{EDUCATION}
   \item {\bf MASc in Aerospace Science and Engineering} \hfill {September 2020 - November 2022}\\
-  University of Toronto Institute for Aerospace Studies (UTIAS), Canada\\
+  University of Toronto, Institute for Aerospace Studies \hfill Toronto, Canada\\
+  CGPA: 4.00/4.00\\
   Supervisor: Prof. Timothy D. Barfoot\\
-  Thesis: \textit{VT\&R3: Generalizing the Visual Teach \& Repeat Navigation Framework}
+  Thesis: \textit{VT\&R3: Generalizing the Teach \& Repeat Navigation Framework}
 
-  \item {\bf BASc in Engineering Science (Robotics)} \hfill {September 2015 - April 2020}\\
-  University of Toronto, Canada\\
-  CGPA: 3.94 / 4.0 (High Honours)\\
-  Supervisor: Prof. Florian Shkurti and Prof. Jonathan Kelly\\
+  \item {\bf BASc in Engineering Science (Robotics)} \hfill {September 2015 - June 2020}\\
+  University of Toronto \hfill Toronto, Canada\\
+  CGPA: 3.94/4.00 (High Honours)\\
+  Supervisors: Prof. Florian Shkurti and Prof. Jonathan Kelly\\
   Thesis: \textit{Combining Reinforcement Learning and Imitation Learning through Reward Shaping for Continuous Control}
 \end{rSection}
 
-\begin{rSection}{EMPLOYMENT HISTORY}
-  \item \textbf{Nuro}, Toronto, Canada  \hfill {November 2022 - Present}\\
-  Software Engineer\\
-  Working on autonomous vehicle software for localization, mapping and sensor calibration.
+\begin{rSection}{EMPLOYMENT}
+  \item \textbf{Nuro} \hfill {May 2024 - Present}\\
+  Senior Software Engineer \hfill Toronto, Canada\\
+  Working on synthetic sensor data generation and closed-loop simulation:
+  \vspace{-0.5em}
+  \begin{itemize}[noitemsep,topsep=0pt]
+    \item Developing generative models (NeRF, 3D Gaussian Splatting, and diffusion models) for synthetic sensor data generation from reconstructed 4D spatial-temporal scenes.
+    \item Improving self-driving perception models with synthetically generated camera and lidar data.
+    \item Building a closed-loop simulation pipeline for end-to-end self-driving model evaluation and system validation.
+  \end{itemize}
 
-  \item \textbf{Intel Corporation}, Toronto, Canada  \hfill {May 2018 - May 2019}\\
-  Software Engineer Intern\\
-  Worked on \textit{Intel HLS Compiler} and \textit{Intel FPGA SDK for OpenCL}
+  \item \textbf{Nuro} \hfill {November 2022 - April 2024}\\
+  Software Engineer \hfill Toronto, Canada\\
+  Worked on self-driving vehicle sensor calibration \& calibration validation:
+  \vspace{-0.5em}
+  \begin{itemize}[noitemsep,topsep=0pt]
+    \item Developed offline calibration pipelines for Nuro's self-driving vehicles that calibrate the intrinsic and extrinsic parameters of camera, lidar, radar, and IMU using structured indoor or unstructured outdoor sensor data.
+    \item Developed machine learning calibration validation models for real-time online validation of the extrinsic parameters between camera and lidar.
+    \item Developed sensor simulation and visualization tooling for sensor FoV, scan pattern, and blindspot analysis.
+  \end{itemize}
+
+  \item \textbf{Intel Corporation}  \hfill {May 2018 - May 2019}\\
+  Software Engineer Intern \hfill Toronto, Canada\\
+  Contributed to the development of \textit{Intel HLS Compiler} and \textit{Intel FPGA SDK for OpenCL}:
   \vspace{-0.5em}
   \begin{itemize}[noitemsep,topsep=0pt]
     \item Intel HLS Compiler: a high-level synthesis (HLS) tool that takes in untimed C++ code and generates production-quality register transfer level (RTL) code optimized for Intel FPGAs.
@@ -41,42 +58,10 @@
 \begin{rSection}{SKILLS}
   \item
   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    Communication      & Chinese (Mandarin), English                                                         \\
-    Programming        & C/C++, Python, JavaScript, Java                                           \\
-    Software/Libraries & MATLAB, Robot Operating System (ROS), MuJoCo, OpenCV, PyTorch, TensorFlow \\
+    Communication      & Chinese (Mandarin), English\\
+    Programming        & C/C++, Python, JavaScript\\
+    Software/Libraries & MATLAB, Robot Operating System (ROS), OpenCV, PyTorch, TensorFlow\\
   \end{tabular}
-\end{rSection}
-
-\begin{rSection}{PUBLICATIONS}
-  \item \textbf{Along Similar Lines: Local Obstacle Avoidance for Long-term Autonomous Path Following}\\
-  Jordy Sehn, \textbf{Yuchen Wu}, Timothy D. Barfoot\\
-  Submitted to \textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2023
-
-  \item \textbf{Picking Up Speed: Continuous-Time Lidar-Only Odometry using Doppler Velocity Measurements}\\
-  \textbf{Yuchen Wu}, David J. Yoon, Keenan Burnett, Soeren Kammel, Yi Chen, Heethesh Vhavle, Timothy D. Barfoot\\
-  \textit{IEEE Robotics and Automation Letters (RA-L)}, 2023
-  % \textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2023
-
-  \item \textbf{Are We Ready for Radar to Replace Lidar in All-Weather Mapping and Localization?}\\
-  Keenan Burnett*, \textbf{Yuchen Wu}*, David J. Yoon, Angela P. Schoellig, Timothy D. Barfoot\\
-  \textit{IEEE Robotics and Automation Letters (RA-L)}, 2022
-  % \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2022
-
-  \item \textbf{Boreas: A Multi-Season Autonomous Driving Dataset}\\
-  Keenan Burnett, David J. Yoon, \textbf{Yuchen Wu}, Andrew Zou Li, Haowei Zhang, Shichen Lu, Jingxing Qian, Wei-Kang Tseng, Andrew Lambert, Keith Y.K. Leung, Angela P. Schoellig, Timothy D. Barfoot\\
-  Accepted by \textit{International Journal of Robotics Research (IJRR)}
-
-  \item \textbf{Shaping Rewards for Reinforcement Learning with Imperfect Demonstrations using Generative Models}\\
-  \textbf{Yuchen Wu}, Melissa Mozifian, Florian Shkurti\\
-  \textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2021
-\end{rSection}
-
-\begin{rSection}{OPEN-SOURCE PROJECTS}
-  \item \textbf{Visual Teach and Repeat 3 (VT\&R3)} \hfill \href{https://github.com/utiasASRL/vtr3}{https://github.com/utiasASRL/vtr3}
-  \vspace{-0.25em}
-  \begin{itemize}[noitemsep,topsep=0pt]
-    \item An end-to-end navigation system for long-range and long-term mobile robot path following using a lidar, radar, or camera as the primary sensor.
-  \end{itemize}
 \end{rSection}
 
 \begin{rSection}{AWARDS}
@@ -87,7 +72,7 @@
   \item \textbf{Garnet W. Mckee - Lachlan Gilchrist Scholarship}, UofT \hfill 2017
 \end{rSection}
 
-\begin{rSection}{STUDENT ACTIVITIES}
+\begin{rSection}{EXTRACURRICULAR ACTIVITIES}
   \item \textbf{UofT aUToronto Team}, Student Advisor,  \hfill September 2021 - June 2022
   \vspace{-0.25em}
   \begin{itemize}[noitemsep,topsep=0pt]
@@ -118,6 +103,52 @@
     \item Supervisor: Prof. Shailendra Joshi at the Department of Mechanical Engineering
     \item Worked on computational modeling and analysis of nano/micro lattice structure.
   \end{itemize}
+\end{rSection}
+
+\begin{rSection}{PUBLICATIONS}
+  \item \textbf{Along Similar Lines: Local Obstacle Avoidance for Long-term Autonomous Path Following}\\
+  Jordy Sehn, \textbf{Yuchen Wu}, Timothy D. Barfoot\\
+  \textit{Conference on Robots and Vision (CRV)}, 2023\\
+  Supported by Natural Sciences and Engineering Research Council of Canada (NSERC) and Vector Institute
+
+  \item \textbf{Picking Up Speed: Continuous-Time Lidar-Only Odometry using Doppler Velocity Measurements}\\
+  \textbf{Yuchen Wu}, David J. Yoon, Keenan Burnett, Soeren Kammel, Yi Chen, Heethesh Vhavle, Timothy D. Barfoot\\
+  \textit{IEEE Robotics and Automation Letters (RA-L)}, 2023\\
+  Supported by Natural Sciences and Engineering Research Council of Canada (NSERC)
+
+  \item \textbf{Boreas: A Multi-Season Autonomous Driving Dataset}\\
+  Keenan Burnett, David J. Yoon, \textbf{Yuchen Wu}, Andrew Zou Li, Haowei Zhang, Shichen Lu, Jingxing Qian, Wei-Kang Tseng, Andrew Lambert, Keith Y.K. Leung, Angela P. Schoellig, Timothy D. Barfoot\\
+  \textit{International Journal of Robotics Research (IJRR)}, 2023\\
+  Supported by General Motors, Amazon (via Amazon Open Data Sponsorship Program), and Natural Sciences and Engineering Research Council of Canada (NSERC)
+  
+  \item \textbf{Are We Ready for Radar to Replace Lidar in All-Weather Mapping and Localization?}\\
+  Keenan Burnett*, \textbf{Yuchen Wu}*, David J. Yoon, Angela P. Schoellig, Timothy D. Barfoot\\
+  \textit{IEEE Robotics and Automation Letters (RA-L)}, 2022\\
+  Supported by Natural Sciences and Engineering Research Council of Canada (NSERC) and General Motors
+
+  \item \textbf{Shaping Rewards for Reinforcement Learning with Imperfect Demonstrations using Generative Models}\\
+  \textbf{Yuchen Wu}, Melissa Mozifian, Florian Shkurti\\
+  \textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2021\\
+  Supported by Natural Sciences and Engineering Research Council of Canada (NSERC)
+\end{rSection}
+
+\begin{rSection}{MASc Thesis}
+  \item {\bf Title:} VT\&R3: Generalizing the Teach \& Repeat Navigation Framework\\
+  {\bf Supervisor:} Timothy D. Barfoot, Professor at the University of Toronto\\
+  {\bf Funding Source:} Natural Sciences and Engineering Research Council of Canada (NSERC) and Vector Institute\\
+  {\bf Abstract:}\\
+  Visual Teach \& Repeat (VT\&R) achieves long-range and long-term autonomous path following through visual topometric mapping and localization. The system requires only a stereo camera for sensing, making it well-suited for many mobile robot applications involving GPS-denied environments. In this thesis, we present VT\&R3, a new version of VT\&R that generalizes its underlying teach and repeat navigation framework to work with lidar, radar, and possibly any rich sensor. We develop lidar and radar topometric mapping and localization pipelines that enable lidar/radar-based teach and repeat. We further extend the lidar pipeline with the ability to detect obstacles in changing environments, making obstacle avoidance during path following possible. We validate our pipelines through extensive evaluation using real-world datasets, including runtime analysis showing their online operation capability. Our results demonstrate surprising accuracy and robustness of lidar localization across varying weather and seasonal conditions, while radar localization remains competitive and has advantages in computation and storage requirements.\\
+  {\bf PDF: } \href{https://cheneyuwu.github.io/data/thesis/masc.pdf}{https://cheneyuwu.github.io/data/thesis/masc.pdf}
+\end{rSection}
+
+\begin{rSection}{BASc Thesis}
+  \item {\bf Title:} Combining Reinforcement Learning and Imitation Learning through Reward Shaping for Continuous Control\\
+  {\bf Supervisor:} Jonathan Kelly, Associate Professor at the University of Toronto\\
+  {\bf Co-Supervisor:} Florian Shkurti, Assistant Professor at the University of Toronto\\
+  {\bf Funding Source:} Natural Sciences and Engineering Research Council of Canada (NSERC)\\
+  {\bf Abstract:}\\
+  The potential benefits of reinforcement learning to real robotics systems are limited by its uninformed exploration that leads to lack of sample efficiency. To address this drawback, we propose a method that combines reinforcement and imitation learning by shaping the reward function with a state-action dependent potential that is learned from demonstrations. The shaping potential specifies high-value areas of the state-action space that are worth exploring first and help accelerate the policy learning. In particular, we use deep generative models to represent the shaping potential and optimize the policy using off-policy actor-critic style RL algorithms, such that our method can apply to continuous state and action spaces. We evaluate our methods on a wide range of simulated manipulation tasks and show that our method significantly improves the sample efficiency of reinforcement learning. More crucially, unlike the majority of existing methods that incorporate demonstrations as hard constraints on policy optimization, our approach only uses the demonstration data to bias exploration and thereby does not suffer from sub-optimal demonstrations.\\
+  {\bf PDF: } \href{https://cheneyuwu.github.io/data/thesis/basc.pdf}{https://cheneyuwu.github.io/data/thesis/basc.pdf}
 \end{rSection}
 
 \end{document}
